@@ -1,0 +1,63 @@
+html{
+    box-sizing: border-box;
+    font-size: 62%;
+}
+*{
+    margin: 0;
+    padding: 0;
+}
+img {
+    display: block;
+    max-width: 100%;
+
+}
+.content{
+    max-width: 1024px ;
+    padding: 5px 25px ;
+    font-size: 16px ;
+    font-weight: 400;
+    margin: 0 auto;
+}
+.content p {
+    font-size: 20px ;
+    margin-bottom: 30px ;
+    font-style: italic;
+}
+.content img {
+    display: block;
+    margin-bottom: 20px ;
+    cursor: zoom-in;
+}
+.lightbox {
+    position: fixed; /* dùng fixed không thay đổi dù màn hình có cuộn */
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    background-color: rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.lightbox-content{
+    max-width: 1000px ;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 25px ;
+}
+.lightbox-content img {
+    min-height: 300px ;
+    width: 70% ;
+    border-radius: 6px ;
+}
+
+.lightbox-content i {
+    color: white;
+    font-size: 50px;
+    cursor: pointer;
+    flex-shrink: 0;
+    margin: 0 35px ;
+}
